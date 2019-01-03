@@ -17,6 +17,12 @@ The goals / steps of this project are the following:
 [image1]: ./writeup_images/nvidia_model.png "Original NVIDIA paper"
 [image2]: ./writeup_images/model_summary.JPG "Model summary"
 [image3]: ./writeup_images/model_plot.png "Model plot"
+[image4]: ./writeup_images/raw_center_1.jpg "center image"
+[image5]: ./writeup_images/raw_left_1.jpg left image"
+[image6]: ./writeup_images/raw_right_1.jpg "right image"
+[image7]: ./writeup_images/rgb_image.pngg "rgb image"
+[image8]: ./writeup_images/crop_image.png "cropped image"
+[image9]: ./writeup_images/crop_and_resize.png "cropped and resized"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -115,38 +121,34 @@ To create the training data, I used the Udacity sample data. For each image, nor
 
 The sample raw images as below,
 
+Center camera image: <br/>
+![alt text][image4]<br/><br/>
 
+Left camera image: <br/>
+![alt text][image5]<br/><br/>
 
+Right camera image: <br/>
+![alt text][image6]<br/><br/><br/>
 
+The BGR images converted to RGB image, below is the sample RGB image,<br/>
+![alt text][image7]<br/><br/>
 
+Cropped image as below,<br/>
+![alt text][image8]<br/><br/>
 
+After resizing the cropped image to 160x70 pixels ,<br/>
+![alt text][image9]<br/><br/>
 
+The steering angle for left and right images as below,<br/>
+Applied correction factor 0.2 to left image. i.e. add 0.2 to left image steering angle.<br/>
+Applied correction factor 0.2 to right image. i.e. substract 0.2 from the right image steering angle.<br/><br/>
 
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting.
+I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
+Finally, the below link has the autonomous drive video of track 1.
 
+https://www.youtube.com/watch?v=alH2p_MzHlA&feature=youtu.be
 
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
-
-![alt text][image2]
-
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
-
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text][image6]
-![alt text][image7]
-
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
-
-
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+#### Future work:
+To collect data for track 2 and test the model performance.
