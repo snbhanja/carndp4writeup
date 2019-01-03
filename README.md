@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [image4]: ./writeup_images/raw_center_1.jpg "center image"
 [image5]: ./writeup_images/raw_left_1.jpg left image"
 [image6]: ./writeup_images/raw_right_1.jpg "right image"
-[image7]: ./writeup_images/rgb_image.pngg "rgb image"
+[image7]: ./writeup_images/rgb_image.png "rgb image"
 [image8]: ./writeup_images/crop_image.png "cropped image"
 [image9]: ./writeup_images/crop_and_resize.png "cropped and resized"
 
