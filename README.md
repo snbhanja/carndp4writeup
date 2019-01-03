@@ -1,9 +1,5 @@
 # **Behavioral Cloning** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Behavioral Cloning Project**
@@ -35,10 +31,12 @@ The goals / steps of this project are the following:
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
-* model.py containing the script to create and train the model
+* data_augmentation_functions.py containing data augmentation functions
+* nvidia_model.py containing the nvidia model architecture.
+* model.py containing the script to create and train the model. Above two python scripts used here.
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
+* writeup_report.md summarizing the results
 
 #### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
@@ -54,9 +52,20 @@ The model.py file contains the code for training and saving the convolution neur
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+The code for model architecture present in nvidia_model.py file.
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+The Nvidia model is used because of its simplicity and demonstrated ability to perform well on self-driving car tasks. 
+Please follow the below research paper,
+https://arxiv.org/pdf/1604.07316v1.pdf
+
+The Nvidia architecture uses images of with a shape of (66, 200, 3), I have changed the input_shape to be (70, 160, 3).
+The architecture from NVIDIA paper as below,
+
+The model summary as below,
+
+The keras model visualisation as below,
+
+
 
 #### 2. Attempts to reduce overfitting in the model
 
