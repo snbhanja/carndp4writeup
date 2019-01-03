@@ -150,6 +150,7 @@ Finally, the below link has the autonomous drive video of track 1.
 
 https://www.youtube.com/watch?v=alH2p_MzHlA&feature=youtu.be
 
+Inside workspace, the output video file is "out_image.mp4".
 
 #### Future work:
 To collect data for track 2 and test the model performance.
