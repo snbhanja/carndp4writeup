@@ -106,6 +106,25 @@ Here is a visualization of the architecture.<br/>
 <br/>
 #### 3. Creation of the Training Set & Training Process
 
+To create the training data, I used the Udacity sample data. For each image, normalization applied before the image was fed into the network. In my case, a training sample consisted of four images:
+
+* Center camera image
+* Horizontally flipped center camera image
+* Left camera image
+* Right camera image
+
+The sample raw images as below,
+
+
+
+
+
+
+
+
+
+
+
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
 ![alt text][image2]
