@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 [image2]: ./writeup_images/model_summary.JPG "Model summary"
 [image3]: ./writeup_images/model_plot.png "Model plot"
 [image4]: ./writeup_images/raw_center_1.jpg "center image"
-[image5]: ./writeup_images/raw_left_1.jpg left image"
+[image5]: ./writeup_images/raw_left_1.jpg "left image"
 [image6]: ./writeup_images/raw_right_1.jpg "right image"
 [image7]: ./writeup_images/rgb_image.png "rgb image"
 [image8]: ./writeup_images/crop_image.png "cropped image"
