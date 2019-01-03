@@ -13,7 +13,6 @@ The goals / steps of this project are the following:
 
 
 [//]: # (Image References)
-
 [image1]: ./writeup_images/nvidia_model.png "Original NVIDIA paper"
 [image2]: ./writeup_images/model_summary.JPG "Model summary"
 [image3]: ./writeup_images/model_plot.png "Model plot"
@@ -122,13 +121,13 @@ To create the training data, I used the Udacity sample data. For each image, nor
 The sample raw images as below,
 
 Center camera image: <br/>
-![alt text][image4]<br/><br/>
+![alt text][image4] <br/><br/>
 
 Left camera image: <br/>
-![alt text][image5]<br/><br/>
+![alt text][image5] <br/><br/>
 
 Right camera image: <br/>
-![alt text][image6]<br/><br/><br/>
+![alt text][image6] <br/><br/>
 
 The BGR images converted to RGB image, below is the sample RGB image,<br/>
 ![alt text][image7]<br/><br/>
