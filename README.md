@@ -71,9 +71,10 @@ I have tried with Keras BatchNormalization for reducing overfit, Then model was 
 Then, I removed the BatchNormalization and reran the training and tested the model passing it to drive.py.
 This time the car completed the lap without deviating from the track.
 The model architecture present in 'nvidia_batchnorm.py' and 'model.h5' is the model file created.
+
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 4).
 The loss function used is 'mse', since it is a regression problem.
 Batch size of 128 used.
 
